@@ -65,7 +65,7 @@ p {
         transition: 1.5s;
     }
 
-.menu-icon .trait {
+.menu-icon span.trait {
         position: absolute;
         top: 50%;
         left: 50%;
