@@ -76,6 +76,8 @@ p {
 
         background-color: black;
         transform: translateX(-50%) translateY(-50%);
+
+        transition: 1.5s;
     }
 
 span.trait::before, span.trait::after {
@@ -117,6 +119,11 @@ span.trait::after {
         transition: 1.5s;
     }
 
+.change .menu-icon:hover span.trait {
+    transform: translateX(-50%) translateY(-50%) translateX(6px);
+    transition: 1.5s;
+    }
+
 .menu-icon svg {
         fill: transparent;
         stroke-width: 1px;
@@ -132,7 +139,6 @@ span.trait::after {
         transition: 1.5s;
     }
 
-
 .change .menu-icon span.trait::before {
         width: 65%;
         transform: translateY(0) rotate(-45deg);
@@ -144,7 +150,6 @@ span.trait::after {
         transform: translateY(0) rotate(45deg);
         transition: 1.5s;
     }
-
 
 
 /* Taille barre nav et icone */
@@ -171,7 +176,7 @@ li a {
     height: 100%;
 }
 
-.fab, .fas{
+.fab, .fas {
         font-size: 16px;
         color: transparent;
         margin-top: 8px;
