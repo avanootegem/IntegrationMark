@@ -122,6 +122,11 @@ span.trait::after {
 .change .menu-icon:hover span.trait {
     transform: translateX(-50%) translateY(-50%) translateX(6px);
     transition: 1.5s;
+    background-color: purple;
+    }
+
+.change .menu-icon:hover span.trait::before, .change .menu-icon:hover span.trait::after {
+        background-color: purple;
     }
 
 .menu-icon svg {
