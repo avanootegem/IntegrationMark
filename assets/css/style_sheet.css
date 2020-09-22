@@ -78,7 +78,7 @@ p {
         transform: translateX(-50%) translateY(-50%);
     }
 
-.trait::before, .trait::after {
+span.trait::before, span.trait::after {
         content:'';
 
         position: absolute;
@@ -94,20 +94,20 @@ p {
         background-color: black;
     }
 
-.trait::after {
+span.trait::after {
         transform: translateY(6px);
         transition: 1.5s;
     }
 
-.menu-icon:hover .trait::before {  
+.menu-icon:hover span.trait::before {  
         transform:translateY(-8px);
     }
     
-.menu-icon:hover .trait::after {  
+.menu-icon:hover span.trait::after {  
         transform:translateY(8px);
     }
 
-.menu-icon .trait::before, .menu-icon .trait::after {
+.menu-icon span.trait::before, .menu-icon span.trait::after {
         transform-origin: 0% 50%;
         transition: 1.5s;
     }
@@ -133,13 +133,13 @@ p {
     }
 
 
-.change .menu-icon .trait::before {
+.change .menu-icon span.trait::before {
         width: 65%;
         transform: translateY(0) rotate(-45deg);
         transition: 1.5s;
     }
 
-.change .menu-icon .trait::after {
+.change .menu-icon span.trait::after {
         width: 65%;
         transform: translateY(0) rotate(45deg);
         transition: 1.5s;
