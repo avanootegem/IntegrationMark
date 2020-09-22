@@ -1,0 +1,246 @@
+header {   
+        background-image: url("../img/champs.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+footer {
+        background: rgb(214, 60, 55);;
+    }
+
+h2 {
+        padding: 150px 0 20px 0;
+    }
+
+h2.pa {
+        padding-top: 250px;
+    }
+
+section p.marge {
+        margin-bottom: 20px;
+    }    
+
+footer p.marge {
+        margin-bottom: 50px;
+    }
+
+/* Couleurs et polices des textes */
+.rou {      
+    color:rgb(214, 60, 55);;
+}
+
+.bla {
+    color: white;
+}
+
+.und {  
+    text-decoration: underline;
+}
+
+.symbol {
+        color: rgb(214, 60, 55);
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+h1, h2 {    
+        font-family: 'Caladea', serif;
+    }
+
+p {
+        font-family: 'Aileron', serif;
+    }
+
+/* Burger avec animation */
+
+.menu-icon {
+        position: relative;
+        width: 54px;
+        height: 54px;
+
+        border-radius: 50%;
+        box-sizing: unset;
+
+        transition: 1.5s;
+    }
+
+.menu-icon .trait {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        display: block;
+        width: 22px;
+        height: 2px;
+
+        background-color: black;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+.trait::before, .trait::after {
+        content:'';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 22px;
+        height: 2px;
+
+        transform: translateY(-6px);
+        transition: 1.5s;
+
+        background-color: black;
+    }
+
+.trait::after {
+        transform: translateY(6px);
+        transition: 1.5s;
+    }
+
+.menu-icon:hover .trait::before {  
+        transform:translateY(-8px);
+    }
+    
+.menu-icon:hover .trait::after {  
+        transform:translateY(8px);
+    }
+
+.menu-icon .trait::before, .menu-icon .trait::after {
+        transform-origin: 0% 50%;
+        transition: 1.5s;
+    }
+
+.change .menu-icon {
+        transform: rotate(270deg);
+        transition: 1.5s;
+    }
+
+.menu-icon svg {
+        fill: transparent;
+        stroke-width: 1px;
+        stroke: black;
+        stroke-dasharray: 170;
+        stroke-dashoffset: 170;
+        transition: 1.5s;
+    }
+
+.change .menu-icon svg {
+        transform: rotate(-270deg);
+        stroke-dashoffset: 0;
+        transition: 1.5s;
+    }
+
+
+.change .menu-icon .trait::before {
+        width: 65%;
+        transform: translateY(0) rotate(-45deg);
+        transition: 1.5s;
+    }
+
+.change .menu-icon .trait::after {
+        width: 65%;
+        transform: translateY(0) rotate(45deg);
+        transition: 1.5s;
+    }
+
+
+
+/* Taille barre nav et icone */
+
+nav {   
+        width: 54px;
+        position: fixed;
+        right: 1%;
+        top: 3%;
+        z-index: 9;
+    }
+
+nav li {
+        list-style-type: none;
+    }
+
+li {
+        text-align: center;
+    }
+
+.fab, .fas{
+        font-size: 16px;
+        color: transparent;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+.change .fab, .change .fas{
+        color: black;
+    }
+
+.nav-links {
+        display: none;
+    }
+
+.nav-container {
+        display : inline-block;
+        cursor: pointer;
+    }
+
+.nav-container:hover .nav-links {
+        display: initial;
+    }
+
+.change .nav-links {
+        display: initial;
+    }
+
+/* Temps apparitions icones */
+
+.change .fa-twitter {
+        transition:0.3s;
+    }
+
+.change .fa-facebook-f {
+        transition:0.6s;
+    }
+
+.change .fa-google-plus-g {
+        transition: 0.9s;
+    }
+
+.change .fa-instagram {
+        transition: 1.2s;
+    }
+
+.change .fa-dribbble {
+        transition: 1.5s;
+    }
+
+.change .fa-search {
+        transition: 1.8s;
+    }
+
+    /* Temps disparitions icones */
+
+.fa-twitter {
+        transition:1.8s;
+    }
+
+.fa-facebook-f {
+        transition:1.5s;
+    }
+
+.fa-google-plus-g {
+        transition: 1.2s;
+    }
+
+.fa-instagram {
+        transition: 0.9s;
+    }
+
+.fa-dribbble {
+        transition: 0.6s;
+    }
+
+.fa-search {
+        transition: 0.3s;
+    }
