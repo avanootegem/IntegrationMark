@@ -154,7 +154,7 @@ nav {
         position: fixed;
         right: 1%;
         top: 3%;
-        z-index: 9;
+        z-index: 8;
     }
 
 nav li {
@@ -164,6 +164,12 @@ nav li {
 li {
         text-align: center;
     }
+
+li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 
 .fab, .fas{
         font-size: 16px;
