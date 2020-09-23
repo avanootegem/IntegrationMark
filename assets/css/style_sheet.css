@@ -120,8 +120,16 @@ span.trait::after {
     }
 
 .change #menu-icon:hover span.trait {
-    transform: translateX(-50%) translateY(-50%) translateX(6px);
-    transition: 1.5s;
+        transform: translateX(-50%) translateY(-50%) translateX(6px);
+        transition: 1.5s;
+    }
+
+.change #menu-icon:hover span.trait::before {
+        transform: rotate(45deg) translateX(6px) translateY(-1px);
+    }
+
+.change #menu-icon:hover span.trait::after {
+        transform: rotate(-45deg) translateX(6px) translateY(1px);
     }
 
 #menu-icon svg {
